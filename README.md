@@ -48,8 +48,8 @@ Open `index.html` in a browser.
 2. Copy this folder into that repository and push it to the `main` branch.
 3. In GitHub, open `Settings`.
 4. Open `Pages`.
-5. Set the source to deploy from the `main` branch root, or use GitHub Actions if preferred.
-6. Save the settings and wait for GitHub Pages to publish the site.
+5. Set the source to `GitHub Actions`.
+6. Push to `main` and wait for the `Deploy GitHub Pages` workflow to finish.
 7. Open `https://sbdkim.github.io/receipt-splitter` and verify the app works.
 
 ## Tests
