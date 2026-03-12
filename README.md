@@ -1,61 +1,38 @@
-# receipt-splitter
+# Receipt Splitter
 
-Split restaurant bills fairly by assigning items, then distributing tax and tip proportionally across the group.
+Browser-based bill splitting tool for assigning items and distributing tax and tip fairly across a group.
 
-Live demo: https://sbdkim.github.io/receipt-splitter
+## Live Demo
+[https://sbdkim.github.io/receipt-splitter](https://sbdkim.github.io/receipt-splitter)
 
 ![Screenshot](assets/screenshot.png)
 
-## Features
-
-- Manual bill entry for title, currency symbol, subtotal, tax, tip, and notes
-- Add, edit, and remove diners
-- Add, edit, and remove bill items with quantity and diner assignments
+## Key Features
+- Manual bill setup with subtotal, tax, tip, notes, and currency symbol
+- Add, edit, and remove diners and line items
 - Shared-item splitting across multiple diners
-- Proportional tax and tip allocation using cent-safe math
-- Reconciliation toggle for using the entered subtotal or matching the assigned items
-- Real-time per-person summary with a copyable payout breakdown
-- Automatic `localStorage` persistence for the current bill
-- Mobile-friendly responsive layout with a sticky total bar
-- Browser-based regression tests in `tests.html`
-
-## How To Use
-
-1. Open `index.html` in a browser.
-2. Enter the bill subtotal, tax, and tip in the Bill setup panel.
-3. Add each diner in the Diners panel.
-4. Add line items in the Items panel and check the diners who shared each item.
-5. Review the Split summary panel as totals update instantly.
-6. If the restaurant subtotal and itemized subtotal differ, switch the subtotal source mode you want to use.
-7. Click `Copy summary` to copy a clean text breakdown for the group.
+- Proportional tax and tip allocation with cent-safe math
+- Reconciliation mode for using entered subtotal or itemized subtotal
+- Real-time per-person summary with copyable payout text
+- Automatic `localStorage` persistence for the active bill
 
 ## Tech Stack
+- Vanilla HTML, CSS, and JavaScript
+- `localStorage` for draft bill persistence
 
-- Vanilla HTML for structure and page delivery
-- Vanilla CSS for the editorial-style responsive interface
-- Vanilla JavaScript for app state, cent-safe calculations, and persistence
-- `localStorage` for restoring the active bill after refresh
-
-No external JavaScript libraries are required.
-
-## Local Development
-
+## Setup / Run Locally
 Open `index.html` in a browser.
 
-## Deploying To GitHub Pages
-
-1. Create a new GitHub repository named `receipt-splitter`.
-2. Copy this folder into that repository and push it to the `main` branch.
-3. In GitHub, open `Settings`.
-4. Open `Pages`.
-5. Set the source to `GitHub Actions`.
-6. Push to `main` and wait for the `Deploy GitHub Pages` workflow to finish.
-7. Open `https://sbdkim.github.io/receipt-splitter` and verify the app works.
-
 ## Tests
+Open `tests.html` in a browser to run the in-browser regression checks.
 
-Open `tests.html` in a browser to run the in-browser assertion suite.
+## Deployment Notes
+- The repo is configured for GitHub Pages deployment from `main` through GitHub Actions.
+- Keep file references relative so the same files work locally and when published.
+
+## Privacy / Notes
+- Everything runs locally in the browser.
+- No account, backend, or server-side bill storage is required.
 
 ## License
-
 MIT
