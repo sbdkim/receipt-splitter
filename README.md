@@ -3,7 +3,7 @@
 Browser-based bill splitting workspace for assigning items and distributing tax and tip fairly across a group with Northline styling.
 
 ## Live Demo
-[https://sbdkim.github.io/receipt-splitter](https://sbdkim.github.io/receipt-splitter)
+[https://sbdkim.github.io/split-receipt](https://sbdkim.github.io/split-receipt)
 
 ![Screenshot](assets/screenshot.png)
 
@@ -33,7 +33,7 @@ Open `tests.html` in a browser to run the in-browser regression checks.
 ## Privacy / Notes
 - Everything runs locally in the browser.
 - No account, backend, or server-side bill storage is required.
-- The public product name is `Split Receipt`, while the repo slug remains `receipt-splitter` until the rename pass.
+- The public product name is `Split Receipt`, and the repo slug target is `split-receipt`.
 
 ## License
 MIT

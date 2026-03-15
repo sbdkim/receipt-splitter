@@ -215,7 +215,7 @@
       if (!window.localStorage) {
         throw new Error("Storage unavailable");
       }
-      var probeKey = "__receipt-splitter-probe__";
+      var probeKey = "__split-receipt-probe__";
       window.localStorage.setItem(probeKey, "1");
       window.localStorage.removeItem(probeKey);
       return createStorageWrapper(window.localStorage);
